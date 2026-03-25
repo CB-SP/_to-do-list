@@ -1,0 +1,16 @@
+
+@media screen and (max-width: 768px) {
+  .main{
+    display: grid;
+    grid-template: 15px 200px 1fr / 15px 1fr 15px;
+  }
+}
+
+
+@media screen and (min-width: 769px) {
+  .main{
+    display: grid;
+    grid-template: 30px 200px 1fr / 5% 1fr 5%;
+  }
+  
+}
