@@ -1,9 +1,10 @@
 :root {
+  /*palete*/
   --text: #030213;
   --text-h: #08060d;
   --background: #ffffff;
   --border: #e5e7eb;
-  --Muted: #ececf0 ;
+  --Muted: #ececf0;
   --accent: #4f46e5;
   --accent-h: #4338ca;
   --created-s: #e0f2fe;
@@ -18,21 +19,51 @@
   --cancel-action: #d4183d;
 
   /*tipografia*/
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --mono: ui-monospace, Consolas, monospace;
-
+  
+  --BaseFont: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ 
   /*shadow*/
   --shadow:
     rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
 
 
+  /*TOKENS de TAMANHO*/
+  /*Text Size--*/
+  --text-xs: 12px;
+  --text-sm: 14px;
+  --text-md: 16px;
+  --text-xm: 1.05rem;
+  --text-lg: 18px;
+  --text-xl: 20px;
+  --text-2xl: 24px;
+  --text-3xl: 28px;
 
-  font: 18px/145% var(--sans);
+  /*Spacing*/
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 12px;
+  --space-lg: 16px;
+  --space-xl: 24px;
+  --space-2xl: 32px;
+  --space-3xl: 48px;
+
+  /*Border Radius*/
+  --radius-xs: 6px;
+  --radius-sm: 8px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /*Text Weigth*/
+  --weight-lg: lighter;
+  --weight-nl: normal;
+  --weight-sb: 400;
+  --weight-bd: 500;
+  --weight-br: bold;
+
+
   letter-spacing: 0.18px;
-  color-scheme: light dark;
-  color: var(--text);
-  background: var(--bg);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -43,22 +74,6 @@
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text: #9ca3af;
-    --text-h: #f3f4f6;
-    --bg: #16171d;
-    --border: #2e303a;
-    --code-bg: #1f2028;
-    --accent: #c084fc;
-    --accent-bg: rgba(192, 132, 252, 0.15);
-    --accent-border: rgba(192, 132, 252, 0.5);
-    --social-bg: rgba(47, 48, 58, 0.5);
-    --shadow:
-      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
-  }
-
-}
 
 body {
   margin: 0;
