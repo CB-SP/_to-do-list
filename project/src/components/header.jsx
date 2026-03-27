@@ -1,8 +1,11 @@
 import styles from './header.module.css'
-import ButtonNewTask from './buttonNewTask'
-import { IoMdAdd } from 'react-icons/io'
+import Button from './buttonNewTask'
+import Modal from './modalAddTask'
+import { useState } from 'react'
 
 function Header() {
+    const [show, setShow] = useState(false)
+
     return (
         <div className={styles.header}>
             <div className={styles.titleArea}>
@@ -10,10 +13,9 @@ function Header() {
                 <p>Gerencie seu tempo e atividades</p>
             </div>
 
-            <ButtonNewTask className={styles.btn}>
-                <IoMdAdd></IoMdAdd>
-                <p>Nova Tarefa</p>
-            </ButtonNewTask>
+            <Button openModal={()=> setShow(true)}></Button>
+            {show && <Modal></Modal>}
+
         </div>
     )
 }

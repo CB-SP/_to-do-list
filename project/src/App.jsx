@@ -6,6 +6,7 @@ function App() {
 
   return (
     <main className="main">
+      <div className="overlay"></div>
         <Header></Header>
         
         <section className="cardsArea">
