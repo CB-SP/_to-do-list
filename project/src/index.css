@@ -1,0 +1,84 @@
+:root {
+  /*palete*/
+  --text: #030213;
+  --text-h: #08060d;
+  --background: #ffffff;
+  --border: #e5e7eb;
+  --borderIn: #a7a3a333;
+  --muted: #ececf0;
+  --accent: #4f46e5;
+  --accent-h: #4338ca;
+  --created-s: #e0f2fe;
+  --created-t: #0369a1;
+  --created-h: #bae6fd;
+  --pendent-s: #fffbeb;
+  --pendent-t: #b45309;
+  --pendent-h: #fef3c7;
+  --canceled-s: #fff1f2;
+  --canceled-t: #be123c;
+  --canceled-h: #fecdd3;
+  --cancel-action: #d4183d;
+
+  /*tipografia*/
+  
+  --baseFont: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ 
+  /*shadow*/
+  --shadow:
+    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+
+  /*TOKENS de TAMANHO*/
+  /*Text Size--*/
+  --text-xs: 12px;
+  --text-sm: 14px;
+  --text-md: 16px;
+  --text-xm: 1.05rem;
+  --text-lg: 18px;
+  --text-xl: 20px;
+  --text-2xl: 24px;
+  --text-3xl: 28px;
+
+  /*Spacing*/
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 12px;
+  --space-lg: 16px;
+  --space-xl: 24px;
+  --space-2xl: 32px;
+  --space-3xl: 48px;
+
+  /*Border Radius*/
+  --radius-xs: 6px;
+  --radius-sm: 8px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /*Text Weigth*/
+  --weight-lg: lighter;
+  --weight-nl: normal;
+  --weight-sb: 400;
+  --weight-bd: 500;
+  --weight-br: bold;
+
+
+  letter-spacing: 0.18px;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+body {
+  color: var(--text);
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--baseFont);
+}

@@ -1,0 +1,48 @@
+.main .overlay{
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, .4);
+  display: none;
+}
+
+@media screen and (max-width: 990px) {
+  .main {
+    display: grid;
+    grid-template: 15px 200px 1fr / 15px 1fr 15px;
+  }
+
+  .main .cardsArea {
+    grid-row: 3;
+    grid-column: 2;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 1.5rem;
+  }
+}
+
+
+@media screen and (min-width: 991px) {
+  .main {
+    display: grid;
+    grid-template: 30px 200px 1fr / 5% 1fr 5%;
+    position: relative;
+  }
+
+  .main .cardsArea {
+    grid-row: 3;
+    grid-column: 2;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 1.5rem;
+  }
+
+  .cardsArea div {
+    flex-grow: 1;
+  }
+}
