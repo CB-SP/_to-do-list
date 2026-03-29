@@ -31,6 +31,7 @@ const ModalStyled = styled.div`
         }
             color: #474747;
         }
+
         .headerModal{
         display: flex;
         justify-content: space-between;
@@ -39,23 +40,23 @@ const ModalStyled = styled.div`
         border-bottom: 1px solid var(--muted);
         padding: 1rem 1.5rem;
         }
+
         .headerModal h3{
             font-weight: var(--weight-bd);
         }
 
         @media screen and (max-width: 768px){
-            height: 450px;    
+            height: 480px;    
 
-            .form{
+        .form{
             width: 270px;
             padding: 0 1.5rem 1.5rem 1.5rem;
             display: flex;
             justify-content: center;
             flex-direction: column;
             gap: 20px;
-            magin-top: 100px;
+            padding-top: 180px;
             overflow-y: auto;
-
         }   
              
         .form .inputBox{
@@ -70,10 +71,7 @@ const ModalStyled = styled.div`
                 gap: 20px;
                 width: 100%;
         }
-        .div .inputBox{
-                
-                widh: 50%;
-        }
+
         .btns{
             display: flex;
             flex-direction: column;
@@ -85,7 +83,7 @@ const ModalStyled = styled.div`
         
         @media screen and (min-width: 769px){
 
-            .form{
+        .form{
             width: 400px;
             padding: 0 1.5rem 1.5rem 1.5rem;
             display: flex;
@@ -106,7 +104,6 @@ const ModalStyled = styled.div`
                 width: 100%;
         }
         .div .inputBox{
-                
                 width: 50%;
         }
         .btns{
