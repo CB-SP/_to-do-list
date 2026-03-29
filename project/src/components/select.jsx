@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 
-const  InputStyled  =  styled.input`
+const  SelectStyled  =  styled.select`
     height: 40px;
     border: 1px solid var(--border);
     border-radius: var(--radius-md);
@@ -11,12 +11,14 @@ const  InputStyled  =  styled.input`
     outline: 2px solid var(--accent);
     }
     transition: all .2s ease-in-out;
-    color: #474747;
+     color: #474747;
     font-family: inherit;
 `
 
-export default function Input({type, placeholder, id}){
-    return(
-        <InputStyled type={type} placeholder={placeholder} id={id}/>
-    )
+export default function Select({taskCategory}){
+    return <SelectStyled id="taskCategory">
+        <option value="">Criada</option>
+        <option value="">Pendente</option>
+        <option value="">Cancelada</option>
+    </SelectStyled>
 }

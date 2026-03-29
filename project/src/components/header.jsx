@@ -1,10 +1,21 @@
 import styles from './header.module.css'
 import Button from './buttonNewTask'
-import Modal from './modalAddTask'
-import { useState } from 'react'
+import Modal from './modal'
+import Overlay from './overlayB'
 
+import { useState, useEffect } from 'react'
 function Header() {
     const [show, setShow] = useState(false)
+    const [ overlay, setOverlay ] = useState(false);
+
+    useEffect(()=>{
+        if (show) {
+            document.body.style.overflow = "hidden"
+        }else{
+            document.body.style.overflow = "scroll"
+        }
+    }, [show])
+
 
     return (
         <div className={styles.header}>
@@ -13,8 +24,12 @@ function Header() {
                 <p>Gerencie seu tempo e atividades</p>
             </div>
 
-            <Button openModal={()=> setShow(true)}></Button>
-            {show && <Modal></Modal>}
+            <Button  openModal={()=> setShow(true)} activeOverlay={() => setOverlay(true)}></Button>
+
+            {show && <Modal type="Nova Tarefa" closeModal={()=> setShow(false)} desactiveOverlay={()=> setOverlay(false)}/>}
+            {overlay && <Overlay desactiveOverlay={()=> setOverlay(false)} closeModal={()=> setShow(false)}></Overlay>}
+
+
 
         </div>
     )

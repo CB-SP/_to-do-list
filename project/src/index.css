@@ -82,3 +82,9 @@ body {
   box-sizing: border-box;
   font-family: var(--baseFont);
 }
+
+h1, h3, h4, h2, p{
+  margin: 0;
+  padding: 0;
+}
+

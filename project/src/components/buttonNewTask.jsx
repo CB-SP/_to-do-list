@@ -23,9 +23,14 @@ const ButtonStyled = styled.button
     `
 
 
-export default function ButtonNewTask({openModal}) {
+export default function ButtonNewTask({ openModal, activeOverlay }) {
+  function handleClick(){
+    openModal()
+    activeOverlay()
+  }
+
   return (
-    < ButtonStyled onClick={openModal}>
+    < ButtonStyled onClick={ handleClick}>
       <IoMdAdd></IoMdAdd>
       <p>Nova Tarefa</p>
     </ButtonStyled>
