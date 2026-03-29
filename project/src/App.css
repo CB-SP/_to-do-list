@@ -1,9 +1,4 @@
-.main .overlay{
-  position: fixed;
-  inset: 0;
-  background-color: rgba(0, 0, 0, .4);
-  display: none;
-}
+
 
 @media screen and (max-width: 990px) {
   .main {
